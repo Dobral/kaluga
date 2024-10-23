@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>Компьютер загадал число от 1 до 10</p>
+<p>У вас есть 3 попытки чтобы отгадать его</p>
+<p>Для начала игры нажмите кнопку Старт</p>
+<button id="btn" class="bt1">СТАРТ</button>
+<p class="victory">Количество побед: 0</p>
+<p class="dead">Количество поражений: 0</p>
+<script>
+    let victory = 0;
+    let dead = 0;
+    function game() {
+
+        let numberComp = Math.floor(Math.random() * 10) + 1;
+        console.log(numberComp);
+let number;
+for (let i = 0; i < 3; i++){
+    number = +prompt('Введите число:' , '');
+}
+
+    }
+
+    game();
+
+
+
+
+</script>
+</body>
+
+</html>
